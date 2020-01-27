@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaitosuganoo0807/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaitosuganoo0807/portfolio/issues"
+  },
+  "homepage": "https://github.com/kaitosuganoo0807/portfolio#readme",
+  "dependencies": {
+    "firebase": "^7.7.0"
+  }
+}
