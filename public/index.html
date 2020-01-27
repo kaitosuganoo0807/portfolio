@@ -7,7 +7,7 @@
       <meta name="description" content=""/>
       <meta name="keywords" content=""/>
       <meta name="author" content=""/>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/mobiriseicons.css">
       <link rel="stylesheet" href="css/owl.carousel.css">
       <link rel="stylesheet" href="css/styles.css">
@@ -249,12 +249,12 @@
         </div>
         <div class="row mt-5">
           <div class="col-lg-12">
-            <div class="form-kerri">
-              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8GLjF9QDjRXYTs-tPIU3NauuJYsMQkeIl-Ci-tg52j445bA/formResponse" target="_self" method="POST" id="mG61Hd">
+            <div class="form-kerri" id="form-kerri">
+              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8GLjF9QDjRXYTs-tPIU3NauuJYsMQkeIl-Ci-tg52j445bA/formResponse" target="dummyIframe" method="POST" id="form" name="myForm">
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="form-group mt-2">
-                      <input name="entry.712107336" id="name" type="text" class="form-control" placeholder="※お名前" required>
+                      <input name="entry.712107336"  id="name" type="text" class="form-control" placeholder="※お名前" required>
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -279,11 +279,13 @@
                 </div>
                 <div class="row">
                   <div class="col-lg-12 text-right">
-                    <input name="submit" class="btn btn-custom" value="送信">
+                    <input type="button" class="btn btn-custom" value="送信" onclick="submitForm()"/>
                   </div>
                 </div>
               </form>
+              <iframe name="dummyIframe" style="display: none;"></iframe>
             </div>
+            <div id="thxMessage" style="display: none;"><p>お問い合わせありがとうございました。</p></div>
           </div>
         </div>
       </div>
@@ -312,8 +314,16 @@
         </div>
       </div>
     </footer>
+<script>
+  function submitForm(){
+    document.myForm.submit();
+    document.getElementById('form-kerri').style.display = 'none';
+    document.getElementById('thxMessage').style.display = 'block';
+  }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/form.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/particles.js"></script>
