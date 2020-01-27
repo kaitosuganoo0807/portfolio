@@ -1,0 +1,16 @@
+.top-letter {
+  letter-spacing: 2px;
+}
+
+.icon-up {
+  transform: translateY(-0.8px);
+}
+
+.service-content {
+  width: 82%;
+}
+
+@media all and (max-width: 480px) {
+  .sp-br {
+    display: none; }
+}
