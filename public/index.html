@@ -323,5 +323,28 @@
 <script src="js/scrollspy.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/custom.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_5pYVq9g2AN_6U8r_ytvBnQX_q26Jl6Q",
+    authDomain: "kaito-portfolio.firebaseapp.com",
+    databaseURL: "https://kaito-portfolio.firebaseio.com",
+    projectId: "kaito-portfolio",
+    storageBucket: "kaito-portfolio.appspot.com",
+    messagingSenderId: "264510149148",
+    appId: "1:264510149148:web:64a333c03f66e44deb05d9",
+    measurementId: "G-K7HYS9QC6W"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>
