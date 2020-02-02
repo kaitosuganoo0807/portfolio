@@ -330,6 +330,30 @@
     </footer>
 <script>
   function submitForm(){
+    var val = document.getElementsByName("entry.712107336")[0];
+    if (val.value.length == 0) {
+      alert('お名前を入力してください');
+      val.focus();
+      return;
+    }
+    var val = document.getElementsByName("emailAddress")[0];
+    if (val.value.length == 0) {
+      alert('メールアドレスを入力してください');
+      val.focus();
+      return;
+    }
+    var val = document.getElementsByName("entry.2108159750")[0];
+    if (val.value.length == 0) {
+      alert('件名を入力してください');
+      val.focus();
+      return;
+    }
+    var val = document.getElementsByName("entry.1291687112")[0];
+    if (val.value.length == 0) {
+      alert('お問い合わせ内容を入力してください');
+      val.focus();
+      return;
+    }
     document.myForm.submit();
     document.getElementById('form-kerri').style.display = 'none';
     document.getElementById('thxMessage').style.display = 'block';

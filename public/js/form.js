@@ -4,7 +4,7 @@ $(function() {
           url: $('#form').attr('action'),
           data: $('#form').serialize(),
           type: 'POST',
-          dataType: 'xml',
+          dataType: 'json',
           statusCode: {
               0: function() {
                   //成功した際の処理を書きます。
